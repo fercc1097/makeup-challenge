@@ -1,0 +1,11 @@
+{
+  "name": "makeup-results",
+  "version": "1.0.0",
+  "description": "This is a frontend for a makeup store that has an API and needs a forntend to show their products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fercc1097",
+  "license": "MIT"
+}
