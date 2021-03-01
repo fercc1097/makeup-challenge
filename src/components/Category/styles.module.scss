@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+
+@mixin category{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color:white;
+            text-transform: capitalize;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+    .content{
+        width: 100%;
+        height: 140px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    }
+
+    .container{
+        @include category;
+    }
+
+    .primaryColor{
+        @include category;
+        .overlay{
+            background-color: $primaryColorOverlay;
+        }
+    }
+    .secondaryColor{
+        @include category;
+        .overlay{
+            background-color: $secondaryColorOverlay;
+        }
+    }
+    .accentColor{
+        @include category;
+        .overlay{
+            background-color: $accentColorOverlay;
+        }
+    }
+
