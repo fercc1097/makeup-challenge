@@ -3,11 +3,9 @@ import NotFound from "./pages/404";
 import Index from "./pages";
 import Results from "./pages/results";
 
-import "./App.scss";
-
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Index path="/" />
         <Results path="/results" />

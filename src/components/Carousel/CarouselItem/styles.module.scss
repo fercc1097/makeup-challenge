@@ -1,0 +1,38 @@
+@import '../../../styles/variables';
+
+
+.container{
+    position: relative;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #2112147e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .buttonShape{
+            padding: 10px;
+            min-width: 100px;
+            border-radius: 100px;
+            border: 2px solid $secondaryColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            p{
+                margin: 0;
+                color: $secondaryColor;
+                font-weight: bold;
+            }
+        }
+    }
+img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+}

@@ -1,6 +1,10 @@
 import React from "react";
 import { Carousel } from "antd";
+import banner1 from "../../images/banner1.png";
+import banner2 from "../../images/banner2.jpg";
+import banner3 from "../../images/banner3.jpg";
 import styles from "./styles.module.scss";
+import Item from "./CarouselItem";
 
 const contentStyle = {
   height: "160px",
@@ -14,18 +18,9 @@ const CustomCarousel = () => {
   return (
     <div className={styles.content}>
       <Carousel autoplay effect="fade">
-        <div>
-          <h3 style={contentStyle}>1</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
+        <Item image={banner1} text="Eyes Shadow" />
+        <Item image={banner2} text="Nails Polish" />
+        <Item image={banner3} text="Bush" />
       </Carousel>
     </div>
   );
