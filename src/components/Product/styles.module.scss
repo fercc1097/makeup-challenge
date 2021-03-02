@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.container{
+    padding: 10px;
+    margin: 10px;
+    background-color: $primaryLight;
+    overflow: hidden;
+    h1{
+        width: 100%;
+        margin: 0 auto 10px auto;
+        text-align: center;
+        font-weight: 600;
+        color: $accentComplementary;
+    }
+    p{
+        color: rgb(82, 81, 81);
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .price{
+        margin-top: 10px;
+    }
+    .colorsContainer{
+        padding: 0;
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .color{
+        height: 30px;
+        width: 30px;
+        min-height: 30px;
+        min-width: 30px;
+        border-radius: 100px;
+        margin: 0 auto;
+    }
+    .buttonContainer{
+        background-color: $secondaryColor;
+        border-radius: 100px;
+        width: 70%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        margin-top: 30px;
+        a{
+            color:$accentCompDark
+        }
+    }
+}
