@@ -18,7 +18,7 @@ const ThemeManager = () => {
     }
   }, []);
 
-  return <div>time: {time >= 20 || time <= 7 ? "nigth" : "day"}</div>;
+  return <div></div>;
 };
 
 export default ThemeManager;

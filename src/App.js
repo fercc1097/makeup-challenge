@@ -13,6 +13,9 @@ function App() {
     if (theme == "nigth") {
       document.body.style.backgroundColor = "#333333";
     }
+    if (theme == "ligth") {
+      document.body.style.backgroundColor = "#f0f1f4";
+    }
   }, [theme]);
   return (
     <Router>
