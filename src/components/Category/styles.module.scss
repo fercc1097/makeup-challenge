@@ -15,6 +15,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         a{
             color:white;
             text-transform: capitalize;
@@ -53,6 +54,12 @@
         @include category;
         .overlay{
             background-color: $accentColorOverlay;
+        }
+    }
+    .darkProduct{
+        @include category;
+        .overlay{
+            background-color: $accentColorOverlayDark;
         }
     }
 

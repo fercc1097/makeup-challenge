@@ -5,6 +5,7 @@ import { parse } from "query-string";
 import { useLocation } from "@reach/router";
 import styles from "../styles/results.module.scss";
 import Product from "../components/Product";
+import { Link } from "@reach/router";
 
 const categoryToEndpoint = [
   {
@@ -103,24 +104,28 @@ const Results = () => {
     return (
       <div className={styles.content}>
         <div id="top" className={styles.header}>
-          <div>
-            <LeftOutlined />
+          <div className={styles.controls}>
+            <Link to="/">
+              <LeftOutlined className={styles.backButton} />
+            </Link>
             <p>{category[0].name}</p>
           </div>
         </div>
-        {data.map((item) => {
-          return (
-            <Product
-              key={data.id}
-              image={item.api_featured_image}
-              name={item.name}
-              description={item.description}
-              price={item.price}
-              colors={item.product_colors}
-              url={item.product_link}
-            />
-          );
-        })}
+        <div className={styles.products}>
+          {data.map((item) => {
+            return (
+              <Product
+                key={data.id}
+                image={item.api_featured_image}
+                name={item.name}
+                description={item.description}
+                price={item.price}
+                colors={item.product_colors}
+                url={item.product_link}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   }

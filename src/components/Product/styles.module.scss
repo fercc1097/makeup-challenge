@@ -5,6 +5,9 @@
     margin: 10px;
     background-color: $primaryLight;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     h1{
         width: 100%;
         margin: 0 auto 10px auto;
@@ -17,8 +20,9 @@
     }
     img{
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
         margin-bottom: 10px;
+        max-height: 300px;
     }
     .price{
         margin-top: 10px;
@@ -30,6 +34,7 @@
         width: 100%;
         justify-content: flex-start;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
     .color{
         height: 30px;
@@ -37,7 +42,7 @@
         min-height: 30px;
         min-width: 30px;
         border-radius: 100px;
-        margin: 0 auto;
+        margin: 5px 10px;
     }
     .buttonContainer{
         background-color: $secondaryColor;
