@@ -18,9 +18,13 @@ const CustomCarousel = () => {
   return (
     <div className={styles.content}>
       <Carousel autoplay effect="fade">
-        <Item image={banner1} text="Eyes Shadow" />
-        <Item image={banner2} text="Nails Polish" />
-        <Item image={banner3} text="Bush" />
+        <Item image={banner1} text="Eyes Shadow" url="/results?cat=eyeshadow" />
+        <Item
+          image={banner2}
+          text="Nails Polish"
+          url="/results?cat=nail_polish"
+        />
+        <Item image={banner3} text="Bush" url="/results?cat=blush" />
       </Carousel>
     </div>
   );

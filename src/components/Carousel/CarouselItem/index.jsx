@@ -1,9 +1,10 @@
 import React from "react";
+import { Link, navigate } from "@reach/router";
 import styles from "./styles.module.scss";
 
 const Item = ({ image, text = "Maybelline", url = "/" }) => {
   function handleClick() {
-    console.log(`url`, url);
+    navigate(url, { replace: true });
   }
 
   return (

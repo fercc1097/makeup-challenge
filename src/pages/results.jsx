@@ -4,6 +4,7 @@ import { LeftOutlined } from "@ant-design/icons";
 import { parse } from "query-string";
 import { useLocation } from "@reach/router";
 import styles from "../styles/results.module.scss";
+import { useApp } from "../context/globalContext";
 import Product from "../components/Product";
 import { Link } from "@reach/router";
 
@@ -61,6 +62,7 @@ const categoryToEndpoint = [
 ];
 
 const Results = () => {
+  const { theme } = useApp();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [data, setData] = useState();
@@ -85,8 +87,7 @@ const Results = () => {
       }
     }
     getData();
-  }, []);
-  console.log(`data`, data);
+  }, [location]);
   if (loading) {
     return (
       <div className={styles.loadingContainer}>
@@ -104,7 +105,9 @@ const Results = () => {
     return (
       <div className={styles.content}>
         <div id="top" className={styles.header}>
-          <div className={styles.controls}>
+          <div
+            className={theme == "ligth" ? styles.controls : styles.controlsDark}
+          >
             <Link to="/">
               <LeftOutlined className={styles.backButton} />
             </Link>

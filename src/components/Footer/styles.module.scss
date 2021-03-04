@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+.footer{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryColor;
+    p{
+        margin: 0;
+        color: $accentComplementary
+    }
+}
+.footerDark{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accentCompDark;
+    p{
+        margin: 0;
+        color: $accentColor
+    }
+}

@@ -30,6 +30,24 @@
     font-size: 30px;
   }
 }
+.controlsDark{
+  display: flex;
+  margin: 10px;
+  justify-content: flex-start;
+  text-transform: capitalize;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: $secondaryColor;
+  p{
+    margin: 0;
+  }
+  a, .backButton{
+    color: $primaryColor;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+}
 
 .content{
   margin-top: 20px;

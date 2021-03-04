@@ -7,6 +7,7 @@ import { GlobalProvider } from "./context/globalContext";
 
 import "antd/dist/antd.css";
 import ThemeManager from "./components/ThemeManager";
+import Footer from "./components/Footer/index";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Header />
       <Carousel />
       <App />
+      <Footer />
       <ThemeManager />
     </GlobalProvider>
   </React.StrictMode>,
