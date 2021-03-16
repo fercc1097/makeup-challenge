@@ -15,7 +15,7 @@ const Header = () => {
     <div className={styles.header}>
       <img
         onClick={handleClick}
-        src={theme == "ligth" ? logo : logoDark}
+        src={theme == "ligth" ? logoDark : logoDark}
         alt=""
       />
     </div>
