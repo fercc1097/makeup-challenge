@@ -34,7 +34,11 @@
         width: 100%;
         justify-content: flex-start;
         align-items: flex-start;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
     .color{
         height: 30px;
